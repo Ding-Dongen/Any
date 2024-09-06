@@ -1,0 +1,214 @@
+.section-2 {
+    background: $bgP1;
+    border: 1px solid #000;
+}
+
+.part-1 {
+    padding: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .h-1 {
+        display: flex;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 2.13125rem;
+        line-height: 2.77375rem;
+        padding: 1rem;
+    }
+    .p-1 {
+        display: flex;
+        text-align: center;
+        font-size: 1.125rem;
+        line-height: 1.8rem;
+        margin-top: 1rem;
+    }
+    .btn-apple {
+        margin-top: 2rem;
+        display: flex;
+        width: 22.9rem;
+        height: 3.15063rem;
+        padding: 0.55rem 7.575rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5rem;
+        border: 1px solid #131022;
+        background: #131022;
+    }
+    .btn-google {
+        margin-top: 1rem;
+        display: flex;
+        width: 22.9rem;
+        height: 3.15063rem;
+        padding: 0.55rem 7.575rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5rem;
+        border: 1px solid #131022;
+        background: #131022;
+    }
+    .discover-more {
+        display: flex;
+        width: 2.75rem;
+        height: 2.75rem;
+        padding: 0.75rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1.375rem;
+        border: 1px solid #FFF;
+        background: #FFF;
+    }
+    .disc {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin: 2rem 0 2rem 5rem;
+        border: none;
+        background: none;
+}
+
+.pic-tablet { 
+    grid-area: phones;
+    display: none;    
+}
+
+.cont-2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    
+}
+.head-1 {
+    display: none;
+}
+.pic-desktop {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .section-2 {
+        border: none;
+    }
+    
+    .part-1 {
+        max-width: 720px;
+    }
+    .h-1 {
+        display: flex;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 2.76875rem;
+        line-height: 3.6025rem;
+        padding: 3rem 10rem 3rem 10rem;
+        
+    }
+    .p-1 {
+        text-align: start;
+        margin: 5rem 1rem 0 0;
+        font-size: 1.125rem;
+        line-height: 1.8rem;
+        grid-row: 1;
+        
+    }
+
+    .pic-tablet { 
+        display: block;    
+    }
+    #pic {
+        grid-row: 1 / 4;
+        grid-column: 2 / 3;
+    }
+    .btn-google {
+        display: flex;
+        width: 7.875rem;
+        height: 2.74375rem;
+        padding: 0.66563rem 1.05rem 0.55rem 1.05rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5rem;
+        border: 1px solid #131022;
+        background: #131022;
+    }
+    .btn-apple {
+        margin-top: 1rem;
+        display: flex;
+        width: 7.875rem;
+        height: 2.74375rem;
+        padding: 0.66563rem 1.05rem 0.55rem 1.05rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5rem;
+        border: 1px solid #131022;
+        background: #131022;
+    }
+    .disc {
+        display: flex;
+        margin: 0;
+        gap: 1rem;
+        border: none;
+        background: none;
+        padding: 1rem 0 1rem 0;
+        grid-row: 3;
+    }
+    .apple-google-btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        grid-row: 2;
+        margin-top: 1rem;
+    }
+    .head-1 {
+        display: none;
+    }
+    .pic-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 1400px) {
+    .section-2 {
+        border: none;
+        padding-top: 8rem;
+    }
+    
+    .part-1 {
+        max-width: 1320px;
+        
+    }
+    .p-1 {
+        padding: 0 5rem 1rem 0;
+        font-size: 1.125rem;
+    }
+    .h-1 {
+        padding: 2rem 1rem 0 0;
+    }
+
+    .pic-tablet {
+        display: none;
+    }
+    .disc {
+        grid-row: 2;
+        padding: 0;
+        
+    }
+    .apple-google-btns {
+        grid-row: 2;
+        justify-content: flex-start;
+        padding: 0 0 5rem 0;
+    }
+    .headers {
+        display: none;
+    }
+    .head-1 {
+        display: block;
+        text-align: start;
+        font-size: 3.5rem;
+    }
+    .pic-desktop {
+        display: block;
+        grid-column: 3 / -1;
+        grid-row: 1 / 3;
+    }
+}
