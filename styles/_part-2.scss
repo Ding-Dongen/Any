@@ -7,7 +7,7 @@
 }
 
 .part-2 {
-    padding-left: 2rem;
+    padding: 0 1rem 0 1rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -32,6 +32,7 @@
     display: grid;
     grid-template-columns: auto;
     gap: 1rem;
+    margin-bottom: 4rem;
 }
 
 .parent-logo-text p {
@@ -83,7 +84,7 @@
         display: grid;
         grid-template-columns: repeat(2, auto);
         gap: 1rem;
-        margin-bottom: 4rem;
+        
     }
 }
 
@@ -91,12 +92,40 @@
     .part-2 {
         max-width: 1320px;
         display: grid;
+        height: 69rem;
+        
     }
     #desktop-only {
         display: block;
     }
     .phone-features {
         display: block;
+        position: relative;
+    }
+    .image1 {
+        position: absolute;
+        z-index: 0;
+        top: 90%;
+        
+    }
+    .image2 {
+        position: absolute;
+        top: 110%;
+        left: 2.5%;
+        
+    }
+    .image3 {
+        position: absolute ;
+        top: 175%;
+        left: 2.5%;
+    }
+    .parent-logo-text {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-column: -1 / -2;
+        gap: 1rem;
+        
+        
     }
 }
 
