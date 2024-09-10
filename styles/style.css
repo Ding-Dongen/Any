@@ -325,14 +325,25 @@
   }
   .image3 {
     position: absolute;
-    top: 175%;
+    top: 195%;
     left: 2.5%;
   }
   .parent-logo-text {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-column: -1/-2;
+    padding-left: 37rem;
     gap: 1rem;
+  }
+  .head-paragraph-features {
+    padding-left: 37rem;
+    text-align: start;
+  }
+  .header-features {
+    padding: 1rem;
+    font-size: 1.74375rem;
+    font-weight: 800;
+    line-height: 2.26313rem;
+  }
+  .logo-desktop-tablet {
+    width: 12.25rem;
   }
 }
 a {
