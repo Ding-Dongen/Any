@@ -27,7 +27,7 @@
     .btn-apple {
         margin-top: 2rem;
         display: flex;
-        width: 22.9rem;
+        width: 100%;
         height: 3.15063rem;
         padding: 0.55rem 7.575rem;
         justify-content: center;
@@ -39,7 +39,7 @@
     .btn-google {
         margin-top: 1rem;
         display: flex;
-        width: 22.9rem;
+        width: 100%;
         height: 3.15063rem;
         padding: 0.55rem 7.575rem;
         justify-content: center;
@@ -141,6 +141,7 @@
         border-radius: 0.5rem;
         border: 1px solid #131022;
         background: #131022;
+        
     }
     .disc {
         display: flex;

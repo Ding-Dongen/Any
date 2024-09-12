@@ -1,0 +1,64 @@
+.part-6 {
+  margin: 0 auto;
+  padding: 0 1rem 0 1rem;
+}
+.btn-accordion::before {
+    display: flex;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.375rem;
+    border: 1px solid #FFF;
+    background: #F3F6FF;
+}
+.btn-accordion::after {
+    display: flex;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.375rem;
+    border: 1px solid #FFF;
+    background: #1f44b2;
+    transform: rotate(180deg);
+}
+
+
+
+
+.accordion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid rgb(213, 213, 213);
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    box-shadow: 0px -1px 0px 0px #E2E5F1 inset;
+    border-radius: 0.4375rem 0.4375rem 0rem 0rem;
+
+  }
+  
+  .active, .accordion:hover {
+    background-color: #fff; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+
+  
