@@ -714,10 +714,20 @@
 }
 .part-6 {
   margin: 0 auto;
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem 3rem 1rem;
 }
 
-.btn-accordion::before {
+.part-6 h2 {
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+.para-faq {
+  padding: 1rem 1rem 3rem 1rem;
+  text-align: center;
+}
+
+.btn-accordion {
   display: flex;
   width: 2.75rem;
   height: 2.75rem;
@@ -729,25 +739,12 @@
   background: #F3F6FF;
 }
 
-.btn-accordion::after {
-  display: flex;
-  width: 2.75rem;
-  height: 2.75rem;
-  padding: 0.75rem;
-  justify-content: center;
-  align-items: center;
-  border-radius: 1.375rem;
-  border: 1px solid #FFF;
-  background: #1f44b2;
-  transform: rotate(180deg);
-}
-
 .accordion {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
-  color: #444;
+  color: #131022;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -755,9 +752,11 @@
   text-align: left;
   outline: none;
   font-size: 15px;
+  font-style: normal;
   transition: 0.4s;
   box-shadow: 0px -1px 0px 0px #E2E5F1 inset;
   border-radius: 0.4375rem 0.4375rem 0rem 0rem;
+  line-height: 1.3rem;
 }
 
 .active, .accordion:hover {
@@ -770,6 +769,169 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+.btn-support {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.btn-support-mobile-only {
+  background-color: #6366F1;
+  color: white;
+  border-radius: 0.375rem;
+  border: 1px solid #6366F1;
+  background: #6366F1;
+  width: 10rem;
+  padding: 0.675rem 1.77738rem 1.01875rem 1.8rem;
+  color: #FFF;
+  text-align: center;
+  font-style: normal;
+  line-height: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  gap: 1rem;
+}
+.btn-support-mobile-only:hover {
+  background-color: #9397AD;
+  color: white;
+  text-decoration: none;
+}
+
+.box1-support {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .part-6 {
+    max-width: 720px;
+  }
+  .btn-support-mobile-only {
+    display: none;
+  }
+  .boxes-suport {
+    display: flex;
+    justify-content: space-between;
+  }
+  .box1-support {
+    display: block;
+    display: grid;
+    gap: 1.5rem;
+    border: 1px solid #e9eefe;
+    border-radius: 0.5rem;
+    width: 21rem;
+    height: 11rem;
+    padding: 1.5rem;
+  }
+  .contact-chat {
+    color: green;
+  }
+}
+@media (min-width: 768px) and (min-width: 1400px) {
+  .part-6 {
+    max-width: 1320px;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-rows: repeat(12, minmax(0, 1fr));
+    height: 45rem;
+  }
+  .boxes-suport {
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    grid-column: 1/5;
+    grid-row: 5/8;
+  }
+  .box-accordion {
+    grid-column: -1/7;
+    grid-row: 2/10;
+  }
+  #box-2 {
+    width: 13rem;
+  }
+  .part-6 h2 {
+    text-align: start;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    padding: 0;
+  }
+  .para-faq {
+    padding: 1rem 1rem 3rem 1rem;
+    text-align: start;
+    grid-column: 1/4;
+    grid-row: 3/5;
+    margin-top: 2rem;
+    padding: 0;
+  }
+}
+.section-8 {
+  margin: 0 auto;
+  padding: 0 1rem 3rem 1rem;
+}
+
+.part-7 {
+  background-color: #F3F6FF;
+}
+
+.text-subscribe {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+
+.text-subscribe-desktop-only {
+  display: none;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+input::-moz-placeholder {
+  text-align: start;
+}
+
+input::placeholder {
+  text-align: start;
+}
+
+.input-icon {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 1rem;
+}
+
+.form-input {
+  border: 1px solid rgb(216, 216, 218);
+  border-radius: 10px;
+  padding: 1.3rem 1rem;
+  width: 100%;
+}
+
+.btn-subscribe {
+  border: none;
+  position: absolute;
+  vertical-align: middle;
+  right: 0;
+  background-color: #6366F1;
+  color: white;
+  border-radius: 0.375rem;
+  width: 7rem;
+  height: 100%;
+  aspect-ratio: 1;
+}
+.btn-subscribe:hover {
+  background-color: #9397AD;
+  color: white;
+  text-decoration: none;
 }
 
 a {
