@@ -9,9 +9,11 @@
 .text-subscribe {
     display: flex;
     align-items: center;
-    
     gap: 1rem;
     padding: 1rem 1rem;
+    font-size: 1.35rem;
+    font-weight: 800;
+    line-height: 1.8875rem;
 }
 .text-subscribe-desktop-only {
     display: none;
@@ -48,11 +50,62 @@ input::placeholder {
     width: 7rem;
     height: 100%;
     aspect-ratio: 1;
-    
     &:hover {
         background-color: $color-grey;
         color: $light-text;
         text-decoration: none;
     }
-    
+}
+
+@media (min-width: 768px) {
+    .part-7 {
+        min-width: 720px;
+        display: flex;
+        height: 13.63rem;
+        margin-right: 2rem;
+        margin-left: .5rem;
+    }
+    .btn-subscribe {
+        border: none;
+        position: absolute;
+        vertical-align: middle;
+        right: 0;
+        background-color: $brand-primary;
+        color: $light-text;
+        border-radius: 0.375rem;
+        width: 7rem;
+        height: 100%;
+        aspect-ratio: 1;
+        &:hover {
+            background-color: $color-grey;
+            color: $light-text;
+            text-decoration: none;
+        }
+    }
+    .text-subscribe {
+        margin: 1rem 3rem 1rem 1rem;
+        gap: 3rem;
+    }
+    .text-subscribe h4 {
+        font-size: 1.41875rem;
+        font-weight: 800;
+
+    }
+}
+
+@media (min-width: 1400px) {
+    .part-7 {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 0 1rem 3rem 1rem;
+    }
+    .only-mobile-tablet {
+        display: none;
+    }
+    .text-subscribe-desktop-only {
+        display: block;
+        display: flex;
+        align-items: center;
+        
+    }
 }
