@@ -89,7 +89,9 @@ input::placeholder {
     .text-subscribe h4 {
         font-size: 1.41875rem;
         font-weight: 800;
-
+    }
+    .only-mobile-tablet {
+        display: flex;
     }
 }
 
@@ -105,7 +107,7 @@ input::placeholder {
     .text-subscribe-desktop-only {
         display: block;
         display: flex;
-        align-items: center;
-        
+        margin: 1rem 0 0 3rem;
     }
+    
 }
