@@ -77,7 +77,7 @@ a:hover {
 
 .btn-primary {
   background-color: #6366F1;
-  color: white;
+  color: #fff;
   border-radius: 8px;
   padding: 12px 25px;
   display: flex;
@@ -87,7 +87,7 @@ a:hover {
 }
 .btn-primary:hover {
   background-color: #9397AD;
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 .btn-primary i {
@@ -101,7 +101,7 @@ a:hover {
 }
 
 .nav-link {
-  color: #000;
+  color: #131022;
   font-weight: 600;
   text-decoration: none;
 }
@@ -732,7 +732,7 @@ a:hover {
   }
   .btn-money {
     background-color: #6366F1;
-    color: white;
+    color: #fff;
     border-radius: 8px;
     padding: 10px 2px;
     display: flex;
@@ -743,7 +743,7 @@ a:hover {
   }
   .btn-money:hover {
     background-color: #9397AD;
-    color: white;
+    color: #fff;
     text-decoration: none;
   }
   .btn-money i {
@@ -943,7 +943,7 @@ a:hover {
 
 .btn-support-mobile-only {
   background-color: #6366F1;
-  color: white;
+  color: #fff;
   border-radius: 0.375rem;
   border: 1px solid #6366F1;
   background: #6366F1;
@@ -961,7 +961,7 @@ a:hover {
 }
 .btn-support-mobile-only:hover {
   background-color: #9397AD;
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -1087,7 +1087,7 @@ input::placeholder {
   vertical-align: middle;
   right: 0;
   background-color: #6366F1;
-  color: white;
+  color: #fff;
   border-radius: 0.375rem;
   width: 7rem;
   height: 100%;
@@ -1095,7 +1095,7 @@ input::placeholder {
 }
 .btn-subscribe:hover {
   background-color: #9397AD;
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -1113,7 +1113,7 @@ input::placeholder {
     vertical-align: middle;
     right: 0;
     background-color: #6366F1;
-    color: white;
+    color: #fff;
     border-radius: 0.375rem;
     width: 7rem;
     height: 100%;
@@ -1121,7 +1121,7 @@ input::placeholder {
   }
   .btn-subscribe:hover {
     background-color: #9397AD;
-    color: white;
+    color: #fff;
     text-decoration: none;
   }
   .text-subscribe {
@@ -1163,6 +1163,14 @@ input::placeholder {
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+}
+
+html {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
 }
 
 body {

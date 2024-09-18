@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,7 @@
                 <div id="darkmode-toogle-switch" class="btn-toogle-switch">
                   <span class="label">Dark mode</span>
                   <label for="darkmode-switch" class="switch">
-                    <input id="darkmode-switch" type="checkbox">
+                    <input id="darkmode-switch" type="checkbox" name="theme_switch">
                     <span class="slider round"></span>
                   </label>
                 </div>
@@ -439,21 +439,6 @@
           </footer>
   </main>
 
-  <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-      });
-    }
-  </script>
+<script src="./JS/darkmode.js"></script>
 </body>
 </html>
