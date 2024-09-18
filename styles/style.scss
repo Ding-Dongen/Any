@@ -1,19 +1,20 @@
 @import "./reset";
 @import "./variables";
 @import "./header";
-@import "./part-1";
 @import "./part-2";
 @import "./part-3";
-@import "./part-4-onlydesktop";
+@import "./part-4";
 @import "./part-5-onlydesktop";
-@import "./part-6";
+@import "./part-6-onlydesktop";
 @import "./part-7";
+@import "./part-8";
 @import "./footer";
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 body {
     font-family: Manrope;
+    margin: $margin-base;
 }
 
 

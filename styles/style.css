@@ -170,7 +170,7 @@ a:hover {
   border: 1px solid #000;
 }
 
-.part-1 {
+.part-2 {
   padding: 0.5rem;
   margin-left: auto;
   margin-right: auto;
@@ -263,7 +263,7 @@ a:hover {
   .section-2 {
     border: none;
   }
-  .part-1 {
+  .part-2 {
     max-width: 720px;
   }
   .h-1 {
@@ -340,7 +340,7 @@ a:hover {
     border: none;
     padding-top: 8rem;
   }
-  .part-1 {
+  .part-2 {
     max-width: 1320px;
   }
   .p-1 {
@@ -384,7 +384,7 @@ a:hover {
   display: none;
 }
 
-.part-2 {
+.part-3 {
   padding: 0 1rem 0 1rem;
   margin-left: auto;
   margin-right: auto;
@@ -428,7 +428,7 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-  .part-2 {
+  .part-3 {
     max-width: 720px;
   }
   .wrapper-logos {
@@ -460,7 +460,7 @@ a:hover {
   }
 }
 @media (min-width: 1400px) {
-  .part-2 {
+  .part-3 {
     max-width: 1320px;
     display: grid;
     height: 69rem;
@@ -511,7 +511,7 @@ a:hover {
   height: 100%;
 }
 
-.part-3 {
+.part-4 {
   padding: 0 1rem 0 1rem;
   margin-left: auto;
   margin-right: auto;
@@ -575,7 +575,7 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-  .part-3 {
+  .part-4 {
     max-width: 720px;
     padding-left: 3rem;
   }
@@ -599,7 +599,7 @@ a:hover {
   }
 }
 @media (min-width: 1400px) {
-  .part-3 {
+  .part-4 {
     max-width: 1320px;
   }
   .pics-transaction-tablet-mobile {
@@ -760,12 +760,12 @@ a:hover {
     padding-top: 10px;
   }
 }
-.part-5 {
+.part-6 {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .part-5 {
+  .part-6 {
     display: none;
   }
 }
@@ -773,7 +773,7 @@ a:hover {
   .section-6-only-desktop {
     background-color: #F3F6FF;
   }
-  .part-5 {
+  .part-6 {
     display: block;
     max-width: 1320px;
     height: 33.88rem;
@@ -871,12 +871,12 @@ a:hover {
     padding-top: 2rem;
   }
 }
-.part-6 {
+.part-7 {
   margin: 0 auto;
   padding: 0 1rem 3rem 1rem;
 }
 
-.part-6 h2 {
+.part-7 h2 {
   padding: 1rem 1rem;
   text-align: center;
 }
@@ -898,6 +898,10 @@ a:hover {
   background: #F3F6FF;
 }
 
+.box-accordion {
+  gap: 1.5rem;
+}
+
 .accordion {
   display: flex;
   align-items: center;
@@ -907,13 +911,13 @@ a:hover {
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  border: 1px solid rgb(213, 213, 213);
+  border: unset;
   text-align: left;
   outline: none;
   font-size: 15px;
   font-style: normal;
   transition: 0.4s;
-  box-shadow: 0px -1px 0px 0px #E2E5F1 inset;
+  box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
   border-radius: 0.4375rem 0.4375rem 0rem 0rem;
   line-height: 1.3rem;
 }
@@ -966,7 +970,7 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-  .part-6 {
+  .part-7 {
     max-width: 720px;
   }
   .btn-support-mobile-only {
@@ -991,7 +995,7 @@ a:hover {
   }
 }
 @media (min-width: 768px) and (min-width: 1400px) {
-  .part-6 {
+  .part-7 {
     max-width: 1320px;
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -1012,7 +1016,7 @@ a:hover {
   #box-2 {
     width: 13rem;
   }
-  .part-6 h2 {
+  .part-7 h2 {
     text-align: start;
     grid-column: 1/4;
     grid-row: 2/3;
@@ -1028,11 +1032,10 @@ a:hover {
   }
 }
 .section-8 {
-  margin: 0 auto;
   padding: 0 1rem 3rem 1rem;
 }
 
-.part-7 {
+.part-8 {
   background-color: #F3F6FF;
 }
 
@@ -1097,7 +1100,7 @@ input::placeholder {
 }
 
 @media (min-width: 768px) {
-  .part-7 {
+  .part-8 {
     min-width: 720px;
     display: flex;
     height: 13.63rem;
@@ -1134,7 +1137,7 @@ input::placeholder {
   }
 }
 @media (min-width: 1400px) {
-  .part-7 {
+  .part-8 {
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 1rem 3rem 1rem;
@@ -1164,4 +1167,5 @@ input::placeholder {
 
 body {
   font-family: Manrope;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
