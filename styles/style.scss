@@ -12,17 +12,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-html {
-    color-scheme: light;
+html[data-theme="light"] {
+    --color-text: #{$dark};
+    --color-background: #{$light};
+    --color-background-blue: #{$bgp3};
+    --color-background-pink: #{$bgP1};
 }
 
-.dark {
-    color-scheme: dark;
+html[data-theme="dark"] {
+    --color-text: #{$light};
+    --color-background: #{$dark};
+    --color-background-blue: #{$dark};
+    --color-background-pink: #{$dark};
 }
+
+
 
 body {
     font-family: Manrope;
     margin: $margin-base;
+    color: var(--color-text);
+    background: var(--color-background);
 }
 
 

@@ -7,12 +7,10 @@
 }
 
 a {
-  color: #6366F1;
   text-decoration: none;
 }
 
 a:hover {
-  color: #6366F1;
   text-decoration: underline;
 }
 
@@ -24,7 +22,7 @@ a:hover {
   /* The slider */
   /* Rounded sliders */
 }
-.btn-toogle-switch .switch {
+.btn-toogle-switch .switchs {
   position: relative;
   display: inline-block;
   width: 60px;
@@ -101,7 +99,7 @@ a:hover {
 }
 
 .nav-link {
-  color: #131022;
+  color: var(--color-text);
   font-weight: 600;
   text-decoration: none;
 }
@@ -166,7 +164,7 @@ a:hover {
   }
 }
 .section-2 {
-  background: radial-gradient(118% 116.18% at 50% 100%, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);
+  background: var(--color-background-pink);
   border: 1px solid #000;
 }
 
@@ -177,6 +175,7 @@ a:hover {
 }
 
 .h-1 {
+  color: var(--color-text);
   display: flex;
   text-align: center;
   margin-top: 1rem;
@@ -240,22 +239,7 @@ a:hover {
   background: none;
 }
 
-.pic-tablet {
-  grid-area: phones;
-  display: none;
-}
-
-.cont-2 {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-}
-
-.head-1 {
-  display: none;
-}
-
-.pic-desktop {
+#pic {
   display: none;
 }
 
@@ -265,28 +249,31 @@ a:hover {
   }
   .part-2 {
     max-width: 720px;
+    padding: 1.94rem;
+    height: 50rem;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-rows: repeat(12, minmax(0, 1fr));
   }
   .h-1 {
-    display: flex;
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 2.76875rem;
     line-height: 3.6025rem;
-    padding: 3rem 10rem 3rem 10rem;
+    grid-column: 2/12;
+    grid-row: 2/5;
   }
-  .p-1 {
-    text-align: start;
-    margin: 5rem 1rem 0 0;
-    font-size: 1.125rem;
+  .head-par-1 {
+    margin-top: 2rem;
     line-height: 1.8rem;
-    grid-row: 1;
-  }
-  .pic-tablet {
-    display: block;
+    grid-column: 1/6;
+    grid-row: 7/10;
   }
   #pic {
-    grid-row: 1/4;
-    grid-column: 2/3;
+    display: block;
+    grid-column: 5/12;
+    grid-row: 6/12;
+    -o-object-fit: fill;
+       object-fit: fill;
+    padding-left: 1rem;
+    padding-top: 2.3rem;
   }
   .btn-google {
     display: flex;
@@ -317,19 +304,17 @@ a:hover {
     gap: 1rem;
     border: none;
     background: none;
-    padding: 1rem 0 1rem 0;
-    grid-row: 3;
+    grid-column: 1/4;
+    grid-row: 11/13;
   }
   .apple-google-btns {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    grid-row: 2;
-    margin-top: 1rem;
-  }
-  .head-1 {
-    display: none;
+    padding-left: 3rem;
+    grid-column: 1/5;
+    grid-row: 10/11;
   }
   .pic-desktop {
     display: none;
@@ -338,42 +323,58 @@ a:hover {
 @media (min-width: 1400px) {
   .section-2 {
     border: none;
-    padding-top: 8rem;
+    margin-top: 5rem;
   }
   .part-2 {
     max-width: 1320px;
   }
-  .p-1 {
-    padding: 0 5rem 1rem 0;
+  .head-par-1 {
+    margin-top: 1rem;
     font-size: 1.125rem;
+    line-height: 1.8rem;
+    grid-column: 1/5;
+    grid-row: 5/7;
   }
   .h-1 {
-    padding: 2rem 1rem 0 0;
-  }
-  .pic-tablet {
-    display: none;
-  }
-  .disc {
-    grid-row: 2;
-    padding: 0;
-  }
-  .apple-google-btns {
-    grid-row: 2;
-    justify-content: flex-start;
-    padding: 0 0 5rem 0;
-  }
-  .headers {
-    display: none;
-  }
-  .head-1 {
-    display: block;
     text-align: start;
     font-size: 3.5rem;
+    grid-column: 1/6;
+    grid-row: 2/5;
+    padding: 0;
   }
-  .pic-desktop {
+  .headers {
+    color: var(--color-text);
+    font-size: 3.5rem;
+  }
+  .p-1 {
+    text-align: start;
+  }
+  .disc {
+    padding: 0;
+  }
+  .btn-google {
+    width: 11.25rem;
+    height: 3.25rem;
+  }
+  .btn-apple {
+    width: 11.25rem;
+    height: 3.25rem;
+  }
+  .apple-google-btns {
+    justify-content: flex-start;
+    padding: 2rem 0 5rem 0;
+    grid-column: 1/5;
+    grid-row: 7/9;
+  }
+  #pic {
     display: block;
-    grid-column: 3/-1;
-    grid-row: 1/3;
+    grid-column: 5/12;
+    grid-row: 1/12;
+    padding: 5rem 0 0 6rem;
+  }
+  #pic img {
+    height: 43rem;
+    width: 39.46;
   }
 }
 .wrapper-logos {
@@ -507,7 +508,7 @@ a:hover {
   }
 }
 .section-4 {
-  background-color: #F3F6FF;
+  background-color: var(--color-background-blue);
   height: 100%;
 }
 
@@ -771,7 +772,7 @@ a:hover {
 }
 @media (min-width: 1400px) {
   .section-6-only-desktop {
-    background-color: #F3F6FF;
+    background-color: var(--color-background-blue);
   }
   .part-6 {
     display: block;
@@ -782,6 +783,9 @@ a:hover {
     grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-template-rows: repeat(12, minmax(0, 1fr));
     padding-top: 3rem;
+  }
+  .part-6 h1 {
+    color: var(--color-text);
   }
   .quote {
     background-color: #6366F1;
@@ -816,7 +820,7 @@ a:hover {
     z-index: 1;
   }
   .box {
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.04);
     border: 1px transparent;
     border-radius: 0.5rem;
     width: 26rem;
@@ -835,13 +839,14 @@ a:hover {
   }
   .par-main {
     padding: 1rem 0;
+    color: var(--color-text);
   }
   .name-title {
     display: flex;
     gap: 1rem;
   }
   .par-name {
-    color: #0B0F19;
+    color: var(--color-text);
     font-feature-settings: "liga" off, "clig" off;
     font-family: Manrope;
     font-size: 1rem;
@@ -993,6 +998,10 @@ a:hover {
   .contact-chat {
     color: green;
   }
+  .box-accordion {
+    display: inherit;
+    gap: 0.5rem;
+  }
 }
 @media (min-width: 768px) and (min-width: 1400px) {
   .part-7 {
@@ -1036,7 +1045,7 @@ a:hover {
 }
 
 .part-8 {
-  background-color: #F3F6FF;
+  background-color: var(--color-background-blue);
 }
 
 .text-subscribe {
@@ -1165,15 +1174,23 @@ input::placeholder {
   line-height: 160%;
 }
 
-html {
-  color-scheme: light;
+html[data-theme=light] {
+  --color-text: #131022;
+  --color-background: #fff;
+  --color-background-blue: #F3F6FF;
+  --color-background-pink: radial-gradient(118% 116.18% at 50% 100%, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);
 }
 
-.dark {
-  color-scheme: dark;
+html[data-theme=dark] {
+  --color-text: #fff;
+  --color-background: #131022;
+  --color-background-blue: #131022;
+  --color-background-pink: #131022;
 }
 
 body {
   font-family: Manrope;
   margin: 0 auto;
+  color: var(--color-text);
+  background: var(--color-background);
 }/*# sourceMappingURL=style.css.map */

@@ -9,7 +9,7 @@
 
 @media (min-width: 1400px) {
     .section-6-only-desktop{
-        background-color: #F3F6FF;
+        background-color: var(--color-background-blue);
     }
     .part-6 {
         display: block;
@@ -20,6 +20,9 @@
         grid-template-columns: repeat(12, minmax(0, 1fr));
         grid-template-rows: repeat(12, minmax(0, 1fr));
         padding-top: 3rem;
+    }
+    .part-6 h1 {
+        color: var(--color-text);
     }
     .quote {
         background-color: $brand-primary;
@@ -54,7 +57,7 @@
         z-index: 1;
     }
     .box {
-        background-color: #fff;
+        background: rgba(255, 255, 255, 0.04);
         border: 1px transparent;
         border-radius: 0.5rem;
         width: 26rem;
@@ -73,13 +76,14 @@
     }
     .par-main {
         padding: 1rem 0;
+        color: var(--color-text);
     }
     .name-title {
         display: flex;
         gap: 1rem;
     }
     .par-name {
-        color: #0B0F19;
+        color: var(--color-text);
         font-feature-settings: 'liga' off, 'clig' off;
         font-family: Manrope;
         font-size: 1rem;

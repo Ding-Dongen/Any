@@ -123,6 +123,10 @@
   .contact-chat {
     color: green;
   }
+  .box-accordion {
+    display: inherit;
+    gap: 0.5rem;
+  }
 
   @media (min-width: 1400px) {
     .part-7 {

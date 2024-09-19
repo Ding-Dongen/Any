@@ -1,9 +1,7 @@
 a {
-    color: $brand-primary;
     text-decoration: none;
 }
 a:hover {
-    color: $brand-primary;
     text-decoration: underline;
 }
 
@@ -12,7 +10,7 @@ a:hover {
     align-items: center;
     gap: 10px;
 
-    .switch {
+    .switchs {
         position: relative;
         display: inline-block;
         width: 60px;
@@ -106,7 +104,7 @@ a:hover {
 }
 
 .nav-link {
-    color: $color-dark;
+    color: var(--color-text);
     font-weight: 600;
     text-decoration: none;
     &:hover {
