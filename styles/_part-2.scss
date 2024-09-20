@@ -15,9 +15,11 @@
         display: flex;
         text-align: center;
         margin-top: 1rem;
+        padding: 1rem;
+    }
+    .headers {
         font-size: 2.13125rem;
         line-height: 2.77375rem;
-        padding: 1rem;
     }
     .p-1 {
         display: flex;
@@ -36,7 +38,8 @@
         align-items: center;
         border-radius: 0.5rem;
         border: 1px solid #131022;
-        background: #131022;
+        background: var(--color-background-button);
+        
     }
     .btn-google {
         margin-top: 1rem;
@@ -58,10 +61,12 @@
         justify-content: center;
         align-items: center;
         border-radius: 1.375rem;
-        border: 1px solid #FFF;
-        background: #FFF;
+        border: 1px solid var(--color-background-boxfb);
+        background: var(--color-background-boxfb);
     }
+            
     .disc {
+        color: var(--color-text);
         display: flex;
         align-items: center;
         gap: 1.5rem;
@@ -82,29 +87,27 @@
     .part-2 {
         max-width: 720px;
         padding: 1.94rem;
-        height: 50rem;
+        height: 45rem;
         display: grid;
         grid-template-columns: repeat(12, minmax(0, 1fr));
         grid-template-rows: repeat(12, minmax(0, 1fr));
     }
     .h-1 {
         line-height: 3.6025rem;
-        grid-column: 2 / 12;
+        grid-column: 4 / 10;
         grid-row: 2 / 5;
     }
     .head-par-1 {
         margin-top: 2rem;
         line-height: 1.8rem;
         grid-column: 1 / 6;
-        grid-row: 7 / 10;
+        grid-row: 6 / 9;
     }
     #pic {
         display: block;
         grid-column: 5 / 12;
-        grid-row: 6 / 12;
-        object-fit: fill;
-        padding-left: 1rem;
-        padding-top: 2.3rem;
+        grid-row: 5 / 12;
+        padding-top: 3rem;
     }
     .btn-google {
         display: flex;
@@ -115,7 +118,7 @@
         align-items: center;
         border-radius: 0.5rem;
         border: 1px solid #131022;
-        background: #131022;
+        background: var(--color-background-button);
     }
     .btn-apple {
         margin-top: 1rem;
@@ -129,15 +132,6 @@
         border: 1px solid #131022;
         background: #131022;
     }
-    .disc {
-        display: flex;
-        margin: 0;
-        gap: 1rem;
-        border: none;
-        background: none;
-        grid-column: 1 / 4;
-        grid-row: 11 / 13;
-    }
     .apple-google-btns {
         display: flex;
         align-items: center;
@@ -145,7 +139,15 @@
         gap: 1rem;
         padding-left: 3rem;
         grid-column: 1 / 5;
-        grid-row: 10 / 11;
+        grid-row: 8 / 11;
+    }
+    .disc {
+        display: flex;
+        margin: 0;
+        gap: 1rem;
+        background: none;
+        grid-column: 1 / 5;
+        grid-row: 11 / 13;
     }
     .pic-desktop {
         display: none;
@@ -162,19 +164,19 @@
         max-width: 1320px;
         
     }
-    .head-par-1 {
-        margin-top: 1rem;
-        font-size: 1.125rem;
-        line-height: 1.8rem;
-        grid-column: 1 / 5;
-        grid-row: 5 / 7;
-    }
     .h-1 {
         text-align: start;
         font-size: 3.5rem;
         grid-column: 1 / 6;
         grid-row: 2 / 5;
         padding: 0;
+    }
+    .head-par-1 {
+        margin-top: 1rem;
+        font-size: 1.125rem;
+        line-height: 1.8rem;
+        grid-column: 1 / 5;
+        grid-row: 5 / 7;
     }
     .headers {
         color: var(--color-text);
@@ -198,13 +200,13 @@
         justify-content: flex-start;
         padding: 2rem 0 5rem 0;
         grid-column: 1 / 5;
-        grid-row: 7 / 9;
+        grid-row: 8 / 9;
     }
     #pic {
         display: block;
         grid-column: 5 / 12;
         grid-row: 1 / 12;
-        padding: 5rem 0 0 6rem;
+        padding: 0 0 0 7rem;
        
         img {
             height: 43rem;
