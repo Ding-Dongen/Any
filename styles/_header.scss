@@ -101,6 +101,7 @@ a:hover {
     background-color: transparent;
     border: none;
     font-size: 2rem;
+    color: var(--color-text);
 }
 
 .nav-link {
@@ -143,6 +144,7 @@ a:hover {
     color: var(--color-text);
     text-decoration: none;
 }
+
 
 @media (min-width: 768px) {
     #container-1 {
