@@ -29,19 +29,35 @@
         margin-top: 1rem;
     }
     .btn-apple {
-        margin-top: 2rem;
         display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-text-buttons);
+        margin-top: 1rem;
         width: 100%;
         height: 3.15063rem;
-        padding: 0.55rem 7.575rem;
-        justify-content: center;
-        align-items: center;
+        padding: 0.66563rem 1.05rem 0.55rem 1.05rem;
         border-radius: 0.5rem;
         border: 1px solid #131022;
         background: var(--color-background-button);
-        
+        gap: 0.5rem;
+    }
+    .text-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .download {
+        font-size: 8px;
+    }
+    .store {
+        font-size: 9px;
+        font-weight: 800;
+    }
+    .fa-brands {
+        font-size: 1.7rem;
     }
     .btn-google {
+        color: var(--color-text-buttons);
         margin-top: 1rem;
         display: flex;
         width: 100%;
@@ -51,7 +67,7 @@
         align-items: center;
         border-radius: 0.5rem;
         border: 1px solid #131022;
-        background: #131022;
+        background: var(--color-background-button);
     }
     .discover-more {
         display: flex;
@@ -110,35 +126,34 @@
         padding-top: 3rem;
     }
     .btn-google {
-        display: flex;
         width: 7.875rem;
         height: 2.74375rem;
-        padding: 0.66563rem 1.05rem 0.55rem 1.05rem;
-        justify-content: center;
-        align-items: center;
-        border-radius: 0.5rem;
-        border: 1px solid #131022;
-        background: var(--color-background-button);
     }
     .btn-apple {
         margin-top: 1rem;
-        display: flex;
         width: 7.875rem;
         height: 2.74375rem;
-        padding: 0.66563rem 1.05rem 0.55rem 1.05rem;
-        justify-content: center;
-        align-items: center;
-        border-radius: 0.5rem;
-        border: 1px solid #131022;
-        background: #131022;
+    }
+    .text-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .download {
+        font-size: 7px;
+    }
+    .store {
+        font-size: 11px;
+        font-weight: 800;
+    }
+    .fa-brands {
+        font-size: 1.7rem;
     }
     .apple-google-btns {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        padding-left: 3rem;
-        grid-column: 1 / 5;
+        grid-column: 1 / 6;
         grid-row: 8 / 11;
     }
     .disc {

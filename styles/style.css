@@ -131,6 +131,16 @@ a:hover {
   padding-bottom: 1rem;
 }
 
+#logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
   #container-1 {
     max-width: 720px;
@@ -196,19 +206,40 @@ a:hover {
 }
 
 .btn-apple {
-  margin-top: 2rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-buttons);
+  margin-top: 1rem;
   width: 100%;
   height: 3.15063rem;
-  padding: 0.55rem 7.575rem;
-  justify-content: center;
-  align-items: center;
+  padding: 0.66563rem 1.05rem 0.55rem 1.05rem;
   border-radius: 0.5rem;
   border: 1px solid #131022;
   background: var(--color-background-button);
+  gap: 0.5rem;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.download {
+  font-size: 8px;
+}
+
+.store {
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.fa-brands {
+  font-size: 1.7rem;
 }
 
 .btn-google {
+  color: var(--color-text-buttons);
   margin-top: 1rem;
   display: flex;
   width: 100%;
@@ -218,7 +249,7 @@ a:hover {
   align-items: center;
   border-radius: 0.5rem;
   border: 1px solid #131022;
-  background: #131022;
+  background: var(--color-background-button);
 }
 
 .discover-more {
@@ -277,35 +308,34 @@ a:hover {
     padding-top: 3rem;
   }
   .btn-google {
-    display: flex;
     width: 7.875rem;
     height: 2.74375rem;
-    padding: 0.66563rem 1.05rem 0.55rem 1.05rem;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.5rem;
-    border: 1px solid #131022;
-    background: var(--color-background-button);
   }
   .btn-apple {
     margin-top: 1rem;
-    display: flex;
     width: 7.875rem;
     height: 2.74375rem;
-    padding: 0.66563rem 1.05rem 0.55rem 1.05rem;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.5rem;
-    border: 1px solid #131022;
-    background: #131022;
+  }
+  .text-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .download {
+    font-size: 7px;
+  }
+  .store {
+    font-size: 11px;
+    font-weight: 800;
+  }
+  .fa-brands {
+    font-size: 1.7rem;
   }
   .apple-google-btns {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    padding-left: 3rem;
-    grid-column: 1/5;
+    grid-column: 1/6;
     grid-row: 8/11;
   }
   .disc {
@@ -991,7 +1021,7 @@ a:hover {
     display: block;
     display: grid;
     gap: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid #E2E5F1;
     border-radius: 0.5rem;
     width: 21rem;
     height: 11rem;
@@ -1085,7 +1115,7 @@ input::placeholder {
 }
 
 .form-input {
-  background-color: var(--color-background-blue);
+  background-color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 10px;
   padding: 1.3rem 1rem;
@@ -1161,6 +1191,9 @@ input::placeholder {
     display: flex;
     margin: 1rem 0 0 3rem;
   }
+  .form-input {
+    background-color: var(--color-background-boxfb);
+  }
 }
 .footer {
   display: flex;
@@ -1184,6 +1217,7 @@ html[data-theme=light] {
   --color-background-boxfb: #fff;
   --color-background-chevron: #F3F6FF;
   --color-background-button: #131022;
+  --color-text-buttons: #fff;
 }
 
 html[data-theme=dark] {
@@ -1194,6 +1228,7 @@ html[data-theme=dark] {
   --color-background-boxfb: rgba(255, 255, 255, 0.04);
   --color-background-chevron: rgba(255, 255, 255, 0.04);
   --color-background-button: #fff;
+  --color-text-buttons: #131022;
 }
 
 html[data-theme=light] .logo-apple {

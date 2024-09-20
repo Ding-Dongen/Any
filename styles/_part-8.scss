@@ -33,7 +33,7 @@ input::placeholder {
     margin: 1rem;
 } 
 .form-input {
-    background-color: var(--color-background-blue);
+    background-color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 10px;
     padding: 1.3rem 1rem;
@@ -109,5 +109,7 @@ input::placeholder {
         display: flex;
         margin: 1rem 0 0 3rem;
     }
-    
+    .form-input {
+        background-color: var(--color-background-boxfb);
+    }
 }
