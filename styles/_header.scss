@@ -169,7 +169,7 @@ a:hover {
     }
     .nav {
         grid-template-columns: auto 1fr auto auto;
-        gap: 3rem;
+        gap: 3rem; // ta bort?
     }
     #signin {
         display: block;
