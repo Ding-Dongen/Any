@@ -23,7 +23,8 @@
     width: 100%;
 }
 input::placeholder {
-    text-align:start;
+    padding-left: 1rem;
+    justify-content: flex-start;
 }
 
 .input-icon {
@@ -31,12 +32,19 @@ input::placeholder {
     width: 100%;
     max-width: 100%;
     margin: 1rem;
+}
+.fa-envelope {
+    position: absolute;
+    top: 50%;
+    left: .5rem;
+    transform: translateY(-50%);
+    color: var(--color-envelope);
 } 
 .form-input {
     background-color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 10px;
-    padding: 1.3rem 1rem;
+    padding: 1rem 1.7rem;
     width: 100%;
 }
 .btn-subscribe {
@@ -112,4 +120,11 @@ input::placeholder {
     .form-input {
         background-color: var(--color-background-boxfb);
     }
+    .fa-envelope {
+        position: absolute;
+        top: 50%;
+        left: .5rem;
+        transform: translateY(-50%);
+        color: var(--color-envelope);
+    } 
 }

@@ -21,7 +21,7 @@ html[data-theme="light"] {
     --color-background-chevron: #{$chevron};
     --color-background-button: #{$color-dark};
     --color-text-buttons: #{$light};
-    
+    --color-envelope: #{$color-grey};    
 }
 
 html[data-theme="dark"] {
@@ -33,18 +33,9 @@ html[data-theme="dark"] {
     --color-background-chevron: #{$boxfb};
     --color-background-button: #{$light};
     --color-text-buttons: #{$dark};
+    --color-envelope: #{$color-grey};    
     
 }
-
-html[data-theme="light"] .logo-apple {
-    content: url('../images/icons/appstore-light.svg');
-}
-
-html[data-theme="dark"] .logo-apple {
-    content: url('../images/icons/appstore-dark.svg');
-}
-
-
 
 body {
     font-family: Manrope;
