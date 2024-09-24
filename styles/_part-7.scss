@@ -146,8 +146,6 @@ html[data-theme="light"] .active .fa-chevron-down  {
       max-width: 1320px;
       display: grid;
       grid-template-columns: repeat(12, minmax(0, 1fr)); 
-      grid-template-rows: repeat(12, minmax(0, 1fr));
-      padding: 0;
     }
     .boxes-suport {
       display: flex;
@@ -155,6 +153,7 @@ html[data-theme="light"] .active .fa-chevron-down  {
       gap: 1rem;
       grid-column: 1 / 5;
       grid-row: 5 / 8;
+      margin-top: 3rem;
     }
     .box-accordion {
       grid-column: -1 / 7;
