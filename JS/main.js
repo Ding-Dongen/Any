@@ -62,7 +62,7 @@ checkbox.addEventListener("change", (cb) => {
 // }
 
 
-// accordion
+// accordion taken from w3
 
 var acc = document.getElementsByClassName("accordion");
     var i;

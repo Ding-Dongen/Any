@@ -4,7 +4,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
+/* copy from W3 school with modifications from me */
 .btn-toogle-switch {
     display: flex;
     align-items: center;
@@ -17,7 +17,7 @@ a:hover {
         height: 34px;
       }
       
-      /* copy from W3 school */
+      
       .switchs input {
         opacity: 0;
         width: 0;

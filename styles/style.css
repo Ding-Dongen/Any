@@ -14,11 +14,11 @@ a:hover {
   text-decoration: underline;
 }
 
+/* copy from W3 school with modifications from me */
 .btn-toogle-switch {
   display: flex;
   align-items: center;
   gap: 10px;
-  /* copy from W3 school */
   /* The slider */
   /* Rounded sliders */
 }
@@ -404,13 +404,13 @@ a:hover {
   }
   #pic {
     display: block;
-    grid-column: 5/12;
+    grid-column: 6/12;
     grid-row: 1/12;
     padding: 0 0 0 7rem;
   }
   #pic img {
     height: 43rem;
-    width: 39.46;
+    width: 39.46rem;
   }
 }
 .wrapper-logos {
@@ -478,7 +478,10 @@ a:hover {
     margin-top: 3rem;
     gap: 1rem;
   }
-  #desktop-only {
+  #desktop-only1 {
+    display: none;
+  }
+  #desktop-only2 {
     display: none;
   }
   .logo-desktop-tablet {
@@ -507,7 +510,10 @@ a:hover {
     display: grid;
     height: 69rem;
   }
-  #desktop-only {
+  #desktop-only1 {
+    display: block;
+  }
+  #desktop-only2 {
     display: block;
   }
   .phone-features {
