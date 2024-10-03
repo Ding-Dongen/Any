@@ -382,6 +382,7 @@ a:hover {
   .headers {
     color: var(--color-text);
     font-size: 3.5rem;
+    line-height: 4.55rem;
   }
   .p-1 {
     text-align: start;
@@ -771,6 +772,9 @@ a:hover {
     grid-column: 14/22;
     grid-row: 18/21;
     gap: 1rem;
+  }
+  .card-folder p {
+    padding-top: 1rem;
   }
   .btn-1 {
     padding-top: 1rem;
